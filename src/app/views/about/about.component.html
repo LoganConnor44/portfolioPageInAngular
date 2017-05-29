@@ -1,0 +1,37 @@
+<div class="card-default">
+	<md-card>
+		<md-card-header>
+			<img md-card-avatar class="header-image">
+			<md-card-title>{{applicant.firstName}} {{applicant.lastName}}</md-card-title>
+			<md-card-subtitle>About</md-card-subtitle>
+		</md-card-header>
+		<md-card-content>
+			<p>
+				Software development is <i>the</i> profession for all self-motivated and self-learning individuals. Although I did not formally study Computer Science, I discovered it as a labour of love after I completed a Bachelor's focusing on International Affairs.
+			</p>
+		</md-card-content>
+		<md-card-actions>
+			<md-tab-group>
+				<md-tab label="Programming Languages">
+					<md-list *ngFor="let language of applicant.programmingLanguages">
+	                	<md-list-item>{{language}}</md-list-item>
+	            	</md-list>
+				</md-tab>
+				<md-tab label="Books I've Read">
+					<md-list >
+	                	<md-list-item *ngFor="let bookTitle of applicant.books.title">
+	                		{{bookTitle}}
+                		</md-list-item>
+	            	</md-list>
+				</md-tab>
+				<md-tab label="Project">
+					<md-list >
+	                	<md-list-item *ngFor="let project of applicant.projects">
+	                		{{project}}
+                		</md-list-item>
+	            	</md-list>
+				</md-tab>
+			</md-tab-group>
+		</md-card-actions>
+	</md-card>
+</div>
