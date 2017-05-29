@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 
 import { Applicant } 	from './classes/applicant';
-import { LOGAN }		from './logan';
 
 @Injectable()
 export class ApplicantService {

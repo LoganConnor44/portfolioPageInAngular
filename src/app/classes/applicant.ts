@@ -5,16 +5,16 @@ import { SocialMedia } from './social-media';
 import { Book } from './book';
 
 export class Applicant {
-	protected firstName: string;
-	protected lastName: string;
+	public firstName: string;
+	public lastName: string;
 	protected education: Education;
 	protected occupation: Occupation;
 	protected skills: string[];
 	protected portfolio: string;
 	protected contactInfo: ContactInfo;
-	protected books: Book;
-	protected programmingLanguages: string[];
-	protected projects: string[];
+	public books: Book;
+	public programmingLanguages: string[];
+	public projects: string[];
 
 	constructor(firstNameOfApplicant: string, lastNameOfApplicant: string) {
 		this.firstName = firstNameOfApplicant;

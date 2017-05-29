@@ -1,6 +1,6 @@
 export class Book {
 	protected author: string[];
-	protected title: string[];
+	public title: string[];
 
 	constructor(author: string[], bookName: string[]) {
 		this.author = author;

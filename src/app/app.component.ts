@@ -2,7 +2,6 @@ import { Component, OnInit, Directive } 	from '@angular/core';
 
 import { Applicant } 			from './classes/applicant';
 import { ApplicantService } 	from './applicant.service';
-import { LOGAN }				from './logan';
 
 @Component({
 	selector: 'app-root',
